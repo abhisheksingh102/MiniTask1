@@ -1,10 +1,12 @@
+//This is the signup page new user can login using this page
+
 <?php
 session_start();
 include("connection.php");
 extract($_REQUEST);
     if(isset($_SESSION['id']))
 {
-	header("location:adminlogin.php");
+	//header("location:adminlogin.php");
 }
 
 if(isset($register))
@@ -30,8 +32,8 @@ header("location:adminlogin.php");
 	
  
    
-   
-?>
+  
+  ?>
 
 <!DOCTYPE html>
 <html lang="en" >
